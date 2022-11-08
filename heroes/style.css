@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.principal {
+  display: flex;
+  background-color: #111827;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+}
+
+.principal .container {
+  width: 100%;
+  max-width: 980px;
+}
+
+.principal .container > h1 {
+  text-align: center;
+  color: white;
+}
+
+.principal .container .grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.principal .container .grid .heroe {
+  display: flex;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  gap: 1rem;
+}
+
+.principal .container .grid .heroe h1 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.principal .container .grid .heroe button {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f87171;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.25rem;
+}
+
+.principal .container .grid .heroe p {
+  display: none;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 2px solid #000000;
+}
+
+.principal .container .grid .heroe p.active {
+  display: block;
+}
